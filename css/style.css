@@ -1,0 +1,30 @@
+
+body{
+    background-color: black;
+}
+
+.img-caption h2{
+    font-family: 'Anek Latin', sans-serif;
+}
+
+.layer{
+    background-color: rgba(255, 255, 255, 0.625);
+    opacity: 1;
+    transition: top 1s;
+    top: 100%;
+}
+.box:hover .layer{
+    top: 0;
+}
+/* .box{
+    min-height: 600px;
+    max-height: 600px;
+} */
+
+input::placeholder{
+    text-align: center;
+}
+/* 
+input:focus{
+    outline: none;
+} */

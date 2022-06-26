@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&family=Anek+Latin:wght@200&family=Mulish:wght@400;800&family=Open+Sans:wght@300;400&family=Poppins&family=Quicksand:wght@300&family=Raleway:wght@500;700&family=Roboto:wght@100;300;500&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+
+<section>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group" >
+                    <input class=" form-control bg-black border-top-0 border-end-0 border-start-0 rounded-0 text-white " type="search" placeholder="get movies by word"  id="getMoviesByWord">
+                 </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group"> 
+                    <input class=" form-control bg-black border-top-0 border-end-0 border-start-0 rounded-0 text-white " type="search" placeholder="search"  id="search">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="container py-5">
+    <div class="row gy-3" id="apiBox">
+        <!-- <div class="col-md-4">
+            <div class="box position-relative overflow-hidden">
+                <img class="w-100 rounded" src = "https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg">
+                <div class="layer rounded text-center d-flex align-items-center position-absolute w-100 h-100  start-0">
+                    <div class="img-caption text-black">
+                        <h2>Doctor Strange in the Multiverse of Madness</h2>
+                        <p>"Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary."</p>
+                        <p>rate: 7.6</p>
+                        <p>2022-05-04</p>
+                    </div>
+                </div>
+           </div>
+        </div> -->
+    </div>
+</section>
+
+
+
+
+<section class=" container py-5">
+    <h2 class=" text-white mb-5">ContacUs...</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group mb-3">
+                <input class=" form-control theinputs bg-black border-top-0 border-end-0 border-start-0 rounded-0 text-white" placeholder="Enter Your Name"
+                  type="text" name="" id="userInputName">
+                <div id="validationNameMessage" class="validation-name d-flex align-items-center bg-danger d-none rounded p-2">
+                    <p class="text-white m-0">Your Name is invalid</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group mb-3">
+                <input class=" form-control theinputs bg-black border-top-0 border-end-0 border-start-0 rounded-0 text-white"
+                 placeholder="Enter Email"  type="email" name="" id="userInputEmail">
+                <div id="validationEmailMessage" class=" d-flex align-items-center bg-danger d-none rounded p-2">
+                    <p class="text-white m-0">Enter Valid Email</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group mb-3">
+                <input class=" form-control theinputs bg-black border-top-0 border-end-0 border-start-0 rounded-0 text-white"
+                 placeholder="Enter Phone"  type="" name="" id="userInputPhone" onkeyup="isAllTrue()">
+                <div id="validationPhoneMessage" class=" d-flex align-items-center bg-danger d-none rounded p-2">
+                    <p class="text-white m-0">Enter Valid phone from 9-12 numbers</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group mb-3">
+                <input class=" form-control theinputs bg-black border-top-0 border-end-0 border-start-0 rounded-0 text-white"
+                 placeholder="Enter Age"  type="" name="" id="userInputAge">
+                <div id="validationAgeMessage" class=" d-flex align-items-center bg-danger d-none rounded p-2">
+                    <p class="text-white m-0">Enter the age from 10-80</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group mb-3">
+                <input class=" form-control theinputs bg-black border-top-0 border-end-0 border-start-0 rounded-0 text-white"
+                 placeholder="Enter Password"  type="password" name="" id="userInputPassword" >
+                <div id="validationpasswordMessage" class=" d-flex align-items-center bg-danger d-none rounded p-2">
+                    <p class="text-white m-0">enter valid password *Minimum eight characters, at least one letter and one number:*</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group mb-3">
+                <input class=" form-control theinputs bg-black border-top-0 border-end-0 border-start-0 rounded-0 text-white"
+                 placeholder="Enter RePassword"  type="password" name="" id="userInputRePassword">
+                <div id="validationRepasswordMessage" class=" d-flex align-items-center bg-danger d-none rounded p-2">
+                    <p class="text-white m-0">Repassword is incorrect</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="submitBtn" class="btn border-danger text-danger" >Submit</button>
+
+</section>
+
+
+
+
+
+
+
+                 <!-- <div class="col-md-3">
+                        
+                     </div> -->
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
